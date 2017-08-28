@@ -1,10 +1,11 @@
 sudo: required
+language: bash
 services:
   - docker
 before_install:
   - sudo apt-get install jq docker
+  - docker login -u $DOCKER_USER -p $DOCKER_PASS
 env:
   - ADDON="mopidy"
 script:
-  - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - ./build.sh $ADDON
