@@ -2,10 +2,11 @@ sudo: required
 dist: precise
 services:
   - docker
+language: bash  
 before_install:
   - sudo apt-get install jq
 env:
   - ADDON="mopidy"
-after_success:
+script:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - ./build.sh $ADDON
