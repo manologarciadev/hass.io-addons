@@ -6,6 +6,6 @@ before_install:
   - sudo apt-get install jq
 env:
   - ADDON="mopidy"
-script:
+after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
   - ./build.sh $ADDON
