@@ -3,7 +3,7 @@
 
 Repository for hass.io addons.
 
-## [Mopidy](https://github.com/vmga43/hass.io-addons/tree/master/mopidy) [![](https://images.microbadger.com/badges/version/vmga43/armhf-mopidy.svg)](https://microbadger.com/images/vmga43/armhf-mopidy "Get your own version badge on microbadger.com")
+## [Mopidy](https://github.com/vmga43/hass.io-addons/tree/master/mopidy) 
 
 Mopidy media player : working.
 
